@@ -2,7 +2,7 @@
   <div class="container">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-        <%= link_to image_tag("logo_light.png", width: 100), root_path %>
+        <%= link_to image_tag("logo_light.png", width: 120), root_path %>
       </a>
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 ms-5 justify-content-center mb-md-0">
@@ -28,6 +28,7 @@
               <li><a class="dropdown-item" href="#">Settings</a></li>
               <li><a class="dropdown-item" href="#">Profile</a></li>
               <li><hr class="dropdown-divider"></li>
+              <li><%= link_to "Edit", edit_user_registration_path, class: "dropdown-item" %></li>
               <li><%= link_to 'Sign out', destroy_user_session_path, class: "dropdown-item text-danger", data: { turbo_method: :delete }  %></li>
               
             </ul>
